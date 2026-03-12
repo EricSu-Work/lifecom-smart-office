@@ -1,0 +1,27 @@
+{
+  "name": "lifecom-smart-office",
+  "version": "1.0.0",
+  "description": "LifeCOM AI 智慧營運計畫 — AI Agent 驅動的 CEO/CTO/CSM 智慧作業系統",
+  "private": true,
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "sync:all": "node scripts/sync_ado.js && node scripts/sync_notion.js && node scripts/sync_finance.js && node scripts/sync_line.js && node scripts/sync_slack.js",
+    "sync:ado": "node scripts/sync_ado.js",
+    "sync:notion": "node scripts/sync_notion.js",
+    "sync:line": "node scripts/sync_line.js",
+    "sync:slack": "node scripts/sync_slack.js",
+    "report:ceo": "node scripts/generate_ceo_report.js",
+    "report:cto": "node scripts/generate_cto_report.js",
+    "report:csm": "node scripts/generate_cs_report.js",
+    "report:c04": "node scripts/generate_c04_report.js",
+    "check:delivery": "node scripts/check_delivery_sla.js",
+    "check:pr": "node scripts/check_pr_health.js",
+    "check:events": "node scripts/check_new_events.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.6.2",
+    "xlsx": "^0.18.5"
+  }
+}

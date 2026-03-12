@@ -1,0 +1,47 @@
+# Dependencies
+node_modules/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Sensitive data & credentials
+data/
+state/
+*.json.bak
+
+# Config with tokens/secrets
+.env
+.env.*
+!.env.example
+config/tokens/
+~/.config/
+
+# Generated reports & cache
+data/*-report-*.txt
+data/*-cache.json
+data/ceo-*.txt
+data/cto-*.txt
+data/coo-*.txt
+data/csm-*.txt
+data/c04-*.txt
+data/*.xlsx
+data/*.pdf
+data/lacoste-contract/
+
+# Logs
+*.log
+logs/
+
+# Temp files
+tmp/
+tmp_*.js
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+dist/
+build/
